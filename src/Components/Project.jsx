@@ -33,13 +33,11 @@ function Project(){
       const [modalIsOpen, setModalIsOpen] = useState(false);
       const [selectedProject, setSelectedProject] = useState(null);
     
-      // Ouvre le modal et définit le projet sélectionné
       const openModal = (project) => {
         setSelectedProject(project);
         setModalIsOpen(true);
       };
     
-      // Ferme le modal
       const closeModal = () => {
         setModalIsOpen(false);
         setSelectedProject(null);
