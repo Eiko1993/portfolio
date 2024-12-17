@@ -9,7 +9,7 @@ function About(){
           <p>
             Bonjour ! Je m'appelle Vincent et je suis passionné par le
             développement web. Mon objectif est de créer des applications modernes,
-            performantes et intuitives.Après différents chemins parcourus, je retourne vers ma passion de l'Informatique.
+            performantes et intuitives.
           </p>
         </div>
       );
