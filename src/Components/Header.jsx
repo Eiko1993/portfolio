@@ -17,9 +17,9 @@ function Header(){
         <a href="#footer" className="main-nav-item">
             Contact
         </a>
-        <Link to="https://github.com/Eiko1993" className="main-nav-item">
+        <a href="https://github.com/Eiko1993" className="main-nav-item" target="_blank">
             GitHub
-        </Link>
+        </a>
           </div>
 
     </nav>

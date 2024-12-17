@@ -1,12 +1,13 @@
-
 import "../Assets/CSS/main.css";
 import Project from "../Components/Project";
-
+import Banner from "../Components/Banner";
+import background from "../Assets/Images/banner_projets.jpeg";
 
 function Projects(){
     return(
-        <div>
-                <Project />
+        <div className="projects">
+            <Banner img={background} title="Mes Projets"/>
+            <Project />
         </div>
     )
 }

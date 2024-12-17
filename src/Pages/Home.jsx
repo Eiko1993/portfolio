@@ -1,29 +1,26 @@
 import "../Assets/CSS/main.css";
+import Sidebar from "../Components/Sidebar";
 import About from "../Components/About";
 import Formation from "../Components/Formation";
 import Skills from "../Components/Skills";
+import Banner from "../Components/Banner";
 import { Container, Row, Col, Nav } from "react-bootstrap";
+import background from "../Assets/Images/banner.jpg";
 
 function Home(){
     return (
         <Container fluid className="home">
         <Row className="app-container">
-          <Col md={3} className="sidebar">
-            <Nav className="flex-column home-topics">
-              <Nav.Link href="#about">À propos</Nav.Link>
-              <Nav.Link href="#formation">Formation</Nav.Link>
-              <Nav.Link href="#skills">Compétences</Nav.Link>
-            </Nav>
-          </Col>
+        <Sidebar /> 
           <Col md={{ span: 9, offset: 3 }} className="main-content">
-            <h1>Mon Portfolio</h1>
-            <section id="about">
+          <Banner img={background} title="Mon Portfolio"/>
+            <section id="about" className="about">
               <About />
             </section>
-            <section id="formation">
+            <section id="formation" className="formation">
               <Formation />
             </section>
-            <section id="skills">
+            <section id="skills" className="skills">
               <Skills />
             </section>
           </Col>

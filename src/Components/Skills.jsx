@@ -19,14 +19,9 @@ function Skills() {
               {skills.map((skill, index) => (
                 <Col key={index}>
                   <Card className="text-center">
-                    <Card.Img
-                      variant="top"
-                      src={skill.logo}
-                      alt={skill.name}
-                      style={{ width: "50px", height: "50px", margin: "10px auto" }}
-                    />
+                    <Card.Img variant="top" src={skill.logo} alt={skill.name} className='skills-img' />
                     <Card.Body>
-                      <Card.Title>{skill.name}</Card.Title>
+                      <Card.Title className='skills-title'>{skill.name}</Card.Title>
                     </Card.Body>
                   </Card>
                 </Col>
