@@ -18,7 +18,8 @@ body {
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
-  font-style: italic;}
+  font-style: italic;
+}
 
 .main {
   flex: 1;
@@ -63,7 +64,7 @@ h1, h2, h3 {
 
 .main-nav-item:hover {
   text-decoration: underline;
-  color: #190492;
+  color: #4e6ef7;
 }
 
 .home {
@@ -130,6 +131,8 @@ h1, h2, h3 {
 
 .about{
   font-size: 16px;
+  margin-left: 65px;
+  margin-right: 65px;
 }
 
 .formations {
@@ -286,6 +289,10 @@ h1, h2, h3 {
   font-size: 20px;
 }
 
+.footer h3{
+  font-style: normal;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -321,6 +328,7 @@ h1, h2, h3 {
 
 .footer-center .footer-link:hover {
   text-decoration: underline;
+  color: #4e6ef7;
 }
 
 .footer-right {
@@ -335,7 +343,7 @@ h1, h2, h3 {
 }
 
 .footer-right a:hover {
-  color: #190492;
+  color: #4e6ef7;
   text-decoration: underline;
 }
 
@@ -378,23 +386,30 @@ h1, h2, h3 {
 
 .btn {
   border-radius: 8px;
+  border: 2px solid #f8f7fc;
   padding: 10px 20px;
-  color: #f8f7fc;
+  color: #222;
   font-size: 15px;
   font-weight: 700;
-  background-color: #0f0664;
+  background-color: #f8f7fc;
+}
+
+.btn:hover{
+  background-color: transparent;
+  color:#f8f7fc
 }
 
 .btn-active {
   margin-top: 10px;
-  background-color: rgba(16, 4, 70, 0.753);
+  background-color: #f8f7fc;
+  color: #222;
 }
 
 .btn-disabled {
   margin-top: 10px;
   background-color: gray;
   opacity: 0.6;
-  cursor: not-allowed;
+  pointer-events: none;
 }
 
 /* Responsive Design - Mobile & Tablette */
@@ -402,14 +417,22 @@ h1, h2, h3 {
 @media (max-width: 768px) {
   .main-nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px;
   }
 
   .main-nav a,
-  .main-nav h1,
   .main-nav p {
-    font-size: 16px;
+    font-size: 20px;
+  }
+
+  .main-nav h1{
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .section-title{
+    font-size: 20px;
   }
 
   .banner img {
@@ -419,6 +442,10 @@ h1, h2, h3 {
 
   .banner h2 {
     font-size: 36px;
+  }
+
+  .about{
+    margin: 0;
   }
 
   .projects {
@@ -457,6 +484,7 @@ h1, h2, h3 {
   .main-nav p {
     text-align: left;
   }
+
 
   .banner h2 {
     font-size: 28px;

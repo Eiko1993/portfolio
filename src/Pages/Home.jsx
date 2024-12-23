@@ -4,7 +4,7 @@ import Formation from "../Components/Formation";
 import Skills from "../Components/Skills";
 import Banner from "../Components/Banner";
 import { Container, Row, Col} from "react-bootstrap";
-import background from "../Assets/Images/banner.jpg";
+import background from "../Assets/Images/banner.webp";
 
 function Home(){
     return (

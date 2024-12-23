@@ -1,7 +1,7 @@
 import "../Assets/CSS/main.css";
 import Project from "../Components/Project";
 import Banner from "../Components/Banner";
-import background from "../Assets/Images/banner_projets.jpeg";
+import background from "../Assets/Images/banner_projets.webp";
 
 function Projects(){
     return(

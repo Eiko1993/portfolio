@@ -8,7 +8,7 @@ function Header(){
     <header>
         <nav className="main-nav">
         <Link to="/" className="main-nav-item">
-        <h1>V.M</h1>
+        <h1>Vincent Merah</h1>
         </Link>
           <div className='items'>
           <Link to="/" className="main-nav-item">

@@ -7,10 +7,9 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-left">
-          <p>Vincent Merah</p>
+        <h3>📞 +33 7 84 98 84 23</h3>
         </div>
         <div className="footer-center">
-          <p>📞 +33 7 84 98 84 23</p>
           <Link to="/contacts" className="footer-link">Contactez-moi</Link>
         </div>
         <div className="footer-right">

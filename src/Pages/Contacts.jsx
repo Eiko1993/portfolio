@@ -2,7 +2,7 @@ import "../Assets/CSS/main.css";
 import { Container, Row, Col } from "react-bootstrap";
 import ContactForm from "../Components/ContactForm";
 import Banner from "../Components/Banner";
-import background from "../Assets/Images/contact.jpg";
+import background from "../Assets/Images/contact.webp";
 
 function Contacts() {
     return (
