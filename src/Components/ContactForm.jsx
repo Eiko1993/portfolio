@@ -56,7 +56,6 @@ function ContactForm() {
     <Container>
       <Row className="contact-form">
         <Col md={8}>
-        <h2>Contactez moi</h2>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formName" className="mb-3 form form-text">
               <Form.Label>Nom</Form.Label>
@@ -95,7 +94,7 @@ function ContactForm() {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" className={isFormIncomplete ? "btn-disabled" : "btn-active"} disabled={isFormIncomplete}> 
+            <Button variant="primary" type="submit" className={isFormIncomplete ? "btn btn-disabled" : "btn btn-active"} disabled={isFormIncomplete}> 
               Envoyer
             </Button>
           </Form>

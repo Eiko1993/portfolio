@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Kasa",
+      "description": "Développeur front-end freelance pour Kasa, une entreprise spécialisée dans la location d’appartements entre particuliers.",
+      "details": "Le site de Kasa avait été développé il y a plus de 10 ans en ASP.NET, ce qui entraînait une importante dette technique et des limitations liées à un code legacy. Mon objectif principal était de recréer entièrement le site en utilisant React, une bibliothèque moderne permettant de gagner en flexibilité, performance, et maintenabilité.Ce projet m'a permis de migrer les fonctionnalités existantes vers un framework moderne afin d'optimiser l'expérience utilisateur avec une interface réactive et intuitive.",
+      "githubLink": "https://github.com/Eiko1993/Kasa",
+      "image":"kasa.png"
+    },
+    {
+      "id": 2,
+      "title": "Debug",
+      "description": "Développeur front-end freelance pour 724events, une agence spécialisée dans l'événementiel.",
+      "details": "Le site de l'agence présentait plusieurs problèmes techniques et de performance, affectant l'expérience utilisateur ainsi que la fonctionnalité globale. Mon rôle était d'identifier et corriger les bugs critiques perturbant les fonctionnalités principales du site.",
+      "githubLink": "https://github.com/Eiko1993/Debugging",
+      "image":"debug.png"
+    },
+    {
+      "id": 3,
+      "title": "ArgentBank",
+      "description": "Développeur front-end pour ArgentBank, une nouvelle banque en ligne innovante.",
+      "details": "Dans le cadre de ce projet, mes missions principales ont été de créer un système d'authentification utilisateur moderne en React, en assurant à la fois performance et simplicité pour les utilisateurs finaux et de concevoir un document Swagger détaillant la structure et les fonctionnalités de l'API pour les transactions, afin de proposer une vision claire et fonctionnelle de son implémentation. Ce projet a renforcé mes compétences en création de systèmes sécurisés et en documentation technique pour des solutions backend.",
+      "githubLink": "https://github.com/Eiko1993/bank",
+      "image":"argentbank.png"
+    }
+  ]
