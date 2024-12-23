@@ -1,4 +1,4 @@
-/* Style de base pour les grands écrans */
+
 html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -373,6 +373,7 @@ h1, h2, h3 {
 .form-text {
   font-weight: 600;
   font-size: 18px;
+  padding-bottom: 15px;
 }
 
 .btn {
@@ -398,19 +399,17 @@ h1, h2, h3 {
 
 /* Responsive Design - Mobile & Tablette */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main-nav {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
   }
 
-  .main-nav a {
+  .main-nav a,
+  .main-nav h1,
+  .main-nav p {
     font-size: 16px;
-  }
-
-  .banner h2 {
-    font-size: 32px;
   }
 
   .banner img {
@@ -418,46 +417,117 @@ h1, h2, h3 {
     height: 200px;
   }
 
-  .skills-row {
-    flex-direction: column;
-    align-items: center;
+  .banner h2 {
+    font-size: 36px;
   }
 
-  .footer-content {
+  .projects {
+    padding: 10px;
+  }
+
+  .project-card {
+    margin: 10px 0;
+  }
+
+  .project-image {
+    height: 100px;
+  }
+
+  .skills-row {
+    gap: 10px;
+  }
+
+  .skills-col {
+    max-width: 80px;
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .main-nav {
+    padding: 10px;
+  }
+
+  .main-nav a,
+  .main-nav h1,
+  .main-nav p {
+    text-align: left;
+  }
+
+  .banner h2 {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+
+  .banner img {
+    height: 150px;
+  }
+
+  .skills-row {
+    gap: 10px;
+  }
+
+  .skills-col {
+    max-width: 60px;
+  }
+
+  .skills-card:hover {
+    transform: none;
+  }
+
+  .skills-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skills-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .projects {
+    padding: 5px;
+  }
+
+  .project-card {
+    margin: 5px auto;
+    padding: 10px;
+  }
+
+  .project-image {
+    height: 80px;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .footer {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content{
+    font-size: 16px;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    text-align: center;
     margin-bottom: 10px;
-  }
-
-  .projects-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .banner h2 {
-    font-size: 40px;
-  }
-
-  .skills-row {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
