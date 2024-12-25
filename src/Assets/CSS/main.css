@@ -495,6 +495,10 @@ h1, h2, h3 {
     height: 150px;
   }
 
+  .about p{
+    gap:5px;
+  }
+
   .skills-row {
     gap: 10px;
   }
@@ -550,7 +554,11 @@ h1, h2, h3 {
   }
 
   .footer-content{
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .footer h3{
+    font-size: 14px;
   }
 
   .footer-left,
