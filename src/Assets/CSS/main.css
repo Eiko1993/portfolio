@@ -384,6 +384,12 @@ h1, h2, h3 {
   padding-bottom: 15px;
 }
 
+.message-submitted{
+  color: #4e6ef7;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
 .btn {
   border-radius: 8px;
   border: 2px solid #f8f7fc;

@@ -53,12 +53,14 @@ function ContactForm() {
   };
 
   return (
-    <Container>
-    <Row className="contact-form">
-      <Col md={8}>
-        {isSubmitted ? (
-          <p>Merci pour votre message ! Nous vous répondrons rapidement.</p>
-        ) : (
+<Container>
+      <Row className="contact-form">
+        <Col md={8}>
+          {isSubmitted && (
+            <p className="message-submitted">
+              Merci pour votre message ! Nous vous répondrons rapidement.
+            </p>
+          )}
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formName" className="mb-3 form form-text">
               <Form.Label>Nom</Form.Label>
@@ -106,9 +108,8 @@ function ContactForm() {
               Envoyer
             </Button>
           </Form>
-        )}
-      </Col>
-    </Row>
+        </Col>
+      </Row>
   </Container>
   );
 }
