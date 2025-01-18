@@ -1,7 +1,7 @@
 import React from 'react';
 import "../Assets/CSS/main.css";
 import { Card, Row, Col } from "react-bootstrap";
-import skillsData from "../data/skillsData.json"; // Chemin vers ton fichier JSON
+import skillsData from "../data/skillsData.json";
 
 function Skills() {
   return (

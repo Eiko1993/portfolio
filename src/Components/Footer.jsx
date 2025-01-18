@@ -7,7 +7,9 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-left">
-        <h3>📞 +33 7 84 98 84 23</h3>
+        <h3>
+          <a href="tel:+33784988423"  className="phone-link">📞 +33 7 84 98 84 23</a>
+          </h3>
         </div>
         <div className="footer-center">
           <Link to="/contacts" className="footer-link">Contactez-moi</Link>
