@@ -50,6 +50,7 @@ function Project() {
         contentLabel="Détails du Projet"
         className="custom-modal"
         overlayClassName="custom-overlay"
+        closeTimeoutMS={220}
       >
         {selectedProject && (
           <div className="modal-content">

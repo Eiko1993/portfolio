@@ -1,29 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
+function Header() {
+  const getNavLinkClass = ({ isActive }) =>
+    `main-nav-item ${isActive ? 'active' : ''}`;
 
-function Header(){
-  
-   return(
+  return (
     <header>
-        <nav className="main-nav">
-        <Link to="/" className="main-nav-item">
-        <h1>Vincent Merah</h1>
-        </Link>
-          <div className='items'>
-          <Link to="/" className="main-nav-item">
-            Présentation
-        </Link>
-        <Link to="/projects" className="main-nav-item">
-            Projets
-        </Link>
-        <Link to="/contacts" className="main-nav-item">
-            Contact
-        </Link>
-          </div>
+      <nav className="main-nav" aria-label="Navigation principale">
+        <NavLink to="/" className="brand-link">
+          <h1>Vincent Merah</h1>
+        </NavLink>
 
-    </nav>
-  </header>
-   )
+        <div className="items">
+          <NavLink to="/" end className={getNavLinkClass}>
+            Présentation
+          </NavLink>
+          <NavLink to="/projects" className={getNavLinkClass}>
+            Projets
+          </NavLink>
+          <NavLink to="/contacts" className={getNavLinkClass}>
+            Contact
+          </NavLink>
+        </div>
+      </nav>
+    </header>
+  );
 }
+
 export default Header;

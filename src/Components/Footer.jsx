@@ -7,13 +7,17 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-left">
-        <h3>
-          <a href="tel:+33784988423"  className="phone-link">📞 +33 7 84 98 84 23</a>
-          </h3>
+          <a href="tel:+33784988423" className="phone-link" aria-label="Appeler Vincent Merah">
+            📞 +33 7 84 98 84 23
+          </a>
         </div>
+
         <div className="footer-center">
-          <Link to="/contacts" className="footer-link">Contactez-moi</Link>
+          <Link to="/contacts" className="footer-link">
+            Contactez-moi
+          </Link>
         </div>
+
         <div className="footer-right">
           <a href="https://github.com/Eiko1993" target="_blank" rel="noopener noreferrer">
             GitHub

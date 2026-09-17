@@ -1,7 +1,8 @@
-import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser";
 import "../Assets/CSS/main.css";
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
+
 function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,8 +25,7 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Envoyer les données via EmailJS
-    const Params = {
+    const params = {
       from_name: formData.name,
       from_email: formData.email,
       message: formData.message,
@@ -33,10 +33,10 @@ function ContactForm() {
 
     emailjs
       .send(
-        "service_o28wr4v",   // Remplacez par votre Service ID
-        "template_meq8z0k",  // Remplacez par votre Template ID
-        Params,
-        "QMztctzDgtgZEQwdx"    // Remplacez par votre Public Key
+        "service_o28wr4v",
+        "template_meq8z0k",
+        params,
+        "QMztctzDgtgZEQwdx"
       )
       .then(
         (response) => {
@@ -53,16 +53,17 @@ function ContactForm() {
   };
 
   return (
-<Container>
-      <Row className="contact-form">
-        <Col md={8}>
+    <Container className="contact-form-wrapper">
+      <Row className="contact-form justify-content-center">
+        <Col xs={12} md={10}>
           {isSubmitted && (
             <p className="message-submitted">
               Merci pour votre message ! Nous vous répondrons rapidement.
             </p>
           )}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formName" className="mb-3 form form-text">
+
+          <Form onSubmit={handleSubmit} className="contact-form-box">
+            <Form.Group controlId="formName" className="mb-3 form-group">
               <Form.Label>Nom</Form.Label>
               <Form.Control
                 type="text"
@@ -74,7 +75,7 @@ function ContactForm() {
               />
             </Form.Group>
 
-            <Form.Group controlId="formEmail" className="mb-3 form form-text">
+            <Form.Group controlId="formEmail" className="mb-3 form-group">
               <Form.Label>Email</Form.Label>
               <Form.Control
                 type="email"
@@ -86,7 +87,7 @@ function ContactForm() {
               />
             </Form.Group>
 
-            <Form.Group controlId="formMessage" className="mb-3 form form-text">
+            <Form.Group controlId="formMessage" className="mb-3 form-group">
               <Form.Label>Message</Form.Label>
               <Form.Control
                 as="textarea"
@@ -94,13 +95,12 @@ function ContactForm() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Écrivez votre message"
-                rows={4}
+                rows={5}
                 required
               />
             </Form.Group>
 
             <Button
-              variant="primary"
               type="submit"
               className={isFormIncomplete ? "btn btn-disabled" : "btn btn-active"}
               disabled={isFormIncomplete}
@@ -110,7 +110,7 @@ function ContactForm() {
           </Form>
         </Col>
       </Row>
-  </Container>
+    </Container>
   );
 }
 
