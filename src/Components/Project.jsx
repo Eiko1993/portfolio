@@ -75,6 +75,16 @@ function Project() {
             >
               Voir sur GitHub
             </Button>
+            <Button
+              as="a"
+              href={`${process.env.PUBLIC_URL}/${selectedProject.pdf}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outline-primary"
+              className="mt-3"
+            >
+              Aperçu PDF
+            </Button>
           </div>
         )}
       </Modal>
